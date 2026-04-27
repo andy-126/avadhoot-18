@@ -62,7 +62,7 @@
 <body>
 
   <h1 id="title">Pop the Balloons 🎈</h1>
-  <p id="counter">Balloons</p>
+  <p id="counter">Balloon 1 of 24</p>
 
   <div id="balloon" class="balloon"></div>
 
@@ -87,8 +87,8 @@
     balloon.onclick = () => {
       popSound.play();
       count++;
-      if (count <= 18) {
-        counter.textContent = `Balloon ${count} of 18`;
+      if (count <= 24) {
+        counter.textContent = `Balloon ${count} of 24`;
         balloon.style.transform = 'scale(0)';
         setTimeout(() => {
           balloon.style.transform = 'scale(1)';
